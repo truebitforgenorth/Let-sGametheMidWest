@@ -52,9 +52,22 @@ a {
 }
 
 .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
   font-size: 1.15rem;
   letter-spacing: 0.02em;
   color: var(--primary-dark);
+}
+
+.site-logo {
+  display: block;
+}
+
+.nav-logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 .nav-link {
@@ -354,7 +367,7 @@ a {
 .footer-logo {
   width: 120px;
   height: 120px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 28px;
   background: #fff;
   padding: 0.75rem;
@@ -423,6 +436,11 @@ a {
     line-height: 1.05;
   }
 
+  .nav-logo {
+    width: 36px;
+    height: 36px;
+  }
+
   .site-footer p {
     font-size: 0.96rem;
     line-height: 1.5;
@@ -488,6 +506,11 @@ a {
     height: 86px;
     padding: 0.55rem;
     border-radius: 20px;
+  }
+
+  .nav-logo {
+    width: 34px;
+    height: 34px;
   }
 
   .site-footer h2 {
